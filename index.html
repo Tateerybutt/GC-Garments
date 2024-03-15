@@ -159,40 +159,66 @@
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2024 GC Garments. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
+        <div class="banner">
+            <h1>Welcome to our Seasonal & Holiday Collection!</h1>
+            <p>Discover the latest trends and special offers for the upcoming season.</p>
+        </div>
+        <div class="section">
+            <h1 class="section-title">Seasonal Deals</h1>
+            <div class="Products">
+                <!-- Sample products, replace with your own -->
+                <div class="product">
+                    <img src="product1.jpg" alt="Product 1">
+                    <h3>Summer Essentials</h3>
+                    <p>Shop now for the hottest deals on swimwear, sunglasses, and more!</p>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Product 2">
+                    <h3>Fall Favorites</h3>
+                    <p>Cozy up with our latest collection of sweaters, jackets, and boots.</p>
+                </div>
+                <div class="product">
+                    <img src="product3.jpg" alt="Product 3">
+                    <h3>Holiday Gifts</h3>
+                    <p>Find the perfect gift for everyone on your list this holiday season.</p>
+                </div>
+            </div>
+        </div>
 
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-        window.onscroll = function () { stick() };
+        <footer>
+            <p>&copy; 2024 GC Garments. All rights reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
 
-        var navbar = document.getElementById("navbar");
-        var header = document.getElementById("header");
-        header.innerHTML = '<h1>' + document.title + '</h1>'
-        var sticky = navbar.offsetTop;
-
-        function stick() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
             }
-        }
-    </script>
+            window.onscroll = function () { stick() };
+
+            var navbar = document.getElementById("navbar");
+            var header = document.getElementById("header");
+            header.innerHTML = '<h1>' + document.title + '</h1>'
+            var sticky = navbar.offsetTop;
+
+            function stick() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
 
 </body>
 

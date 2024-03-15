@@ -157,6 +157,17 @@ nav a:hover {
     background-color: #0056b3;
 }
 
+.banner {
+    background-image: url('images/seasonal_banner.jpg'); /* Replace 'seasonal_banner.jpg' with your actual image */
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    font-size: 24px;
+    margin: 30px;
+  }
+
 .feature-section {
     display: flex;
     justify-content: space-around;
@@ -201,7 +212,7 @@ nav a:hover {
 }
 
 .product {
-    width: calc(33.33% - 20px);
+    width: calc(25% - 20px);
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ccc;
