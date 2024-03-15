@@ -1,0 +1,162 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 3px 5px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.banner {
+    background-image: url('gc_garments_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.banner h1 {
+    color: #fff;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 36px;
+}
+
+.content {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+.category {
+    display: inline-block;
+    margin: 20px;
+}
+
+.category img {
+    height: 300px;
+}
+
+.category p {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.feature-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature img {
+    width: 300px;
+    height: 450px;
+}
+
+.feature h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.feature p {
+    margin: 0;
+    color: #555;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.product p {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
