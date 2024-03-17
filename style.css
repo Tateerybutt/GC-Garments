@@ -166,7 +166,35 @@ nav a:hover {
     padding-top: 100px;
     font-size: 24px;
     margin: 30px;
-  }
+}
+
+.newslester {
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    margin: auto;
+    width: max-content;
+    border-radius: 12px;
+}
+
+.newslester input{
+    border: none;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    border-radius: 6px 0 0 6px;
+}
+
+.newslester button{
+    color: #444;
+    background-color: white;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    padding: 10px;
+    appearance: none;
+    font-weight: bold;
+    -webkit-appearance: none;
+}
 
 .feature-section {
     display: flex;
